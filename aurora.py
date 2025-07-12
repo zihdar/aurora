@@ -14,6 +14,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.impute import SimpleImputer, KNNImputer
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler, MinMaxScaler
 from imblearn.over_sampling import SMOTE
+from IPython.display import display
 
 df = pd.read_csv('aurora1.csv')
 df

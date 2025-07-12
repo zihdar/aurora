@@ -10,3 +10,4 @@ notebook
 ipykernel
 plotly
 scikit-image
+IPython.display

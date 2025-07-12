@@ -362,7 +362,7 @@ st.pyplot(plt)
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder, MinMaxScaler, StandardScaler, RobustScaler
-from category_encoders import BinaryEncoder
+#from category_encoders import BinaryEncoder
 
 df
 

@@ -15,6 +15,7 @@ from sklearn.impute import SimpleImputer, KNNImputer
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, StandardScaler, MinMaxScaler
 from imblearn.over_sampling import SMOTE
 from IPython.display import display
+import streamtlit as st
 
 df = pd.read_csv('aurora1.csv')
 df
@@ -127,7 +128,7 @@ plt.show()
 product_counts_per_customer_type = df.groupby('CustomerType')['Product'].value_counts()
 product_customer = df.pivot_table(index='CustomerType', columns='Product', values='OrderID', aggfunc='count', fill_value=0)
 print("Product Count per Customer Type (Pivot Table):")
-display(product_customer)
+st.df(product_customer)
 
 # Cleaning : change products names to Lower case and removing free spaces
 df['Product'] = df['Product'].str.lower().str.strip()
